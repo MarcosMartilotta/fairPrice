@@ -1,18 +1,8 @@
-import { useContext } from "react";
-import { useState } from "react";
 import { StyledHome } from "../styled-components/syledHome";
-import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
-import { useChangeRoute } from "../hooks/useChangeRoute";
 
 const Home = () => {
-  const state = useContext(AppContext);
   const navigate = useNavigate();
-  const [myContext, setMyContext] = useState(state);
-
-  /*   const handleClick = () => {
-    setMyContext({ ...state, routes: { home: "holis" } });
-  }; */
 
   const changeRoute = (route) => {
     navigate(route);
@@ -34,7 +24,6 @@ const Home = () => {
           Alquileres convenientes
         </button>
       </section>
-      <div>{myContext.routes.home}</div>
     </StyledHome>
   );
 };
