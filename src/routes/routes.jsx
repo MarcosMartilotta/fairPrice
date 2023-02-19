@@ -7,6 +7,8 @@ import AmbientsPage from "../pages/AmbientsPage";
 import AmbientTypePage from "../pages/AmbientTypePage";
 import BudgetPage from "../pages/BudgetPage";
 import ResultsPage from "../pages/ResultsPage";
+import MisionPage from "../pages/MisionPage";
+import TuttorialsPage from "../pages/TuttorialsPage";
 
 export const routes = Router([
   {
@@ -37,6 +39,14 @@ export const routes = Router([
       {
         path: "/questionnarie/results",
         element: <ResultsPage />,
+      },
+      {
+        path: "/tuttorials",
+        element: <TuttorialsPage />,
+      },
+      {
+        path: "/ourmission",
+        element: <MisionPage />,
       },
     ],
   },

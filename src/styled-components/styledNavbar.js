@@ -25,12 +25,19 @@ export const NavStyled = styled.nav`
   }
 
   ul {
-    height: 50%;
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    li {
+      text-align: center;
+    }
+    li:hover {
+      text-shadow: 0px 0px 3px #fff;
+      cursor: pointer;
+    }
   }
 
   .background-nav {
@@ -42,6 +49,7 @@ export const NavStyled = styled.nav`
     height: 90vh;
     transition: all 0.3s ease-in-out;
     background-color: blue;
+    opacity: 0.95;
     z-index: -5;
     &.active {
       left: 0;

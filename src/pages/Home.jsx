@@ -24,7 +24,9 @@ const Home = () => {
         <h1>El valor justo</h1>
       </section>
       <section className="questions">
-        <button type="button">Gráficos estadísticos</button>
+        <button type="button" onClick={() => changeRoute("/statistics")}>
+          Gráficos estadísticos
+        </button>
         <button
           type="button"
           onClick={() => changeRoute("/questionnarie/ambients")}
