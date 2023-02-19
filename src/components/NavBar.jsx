@@ -1,18 +1,14 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import NavigateContext from "../context/navigateContext";
 import Hamburguer from "./Hamburguer";
 import { NavStyled } from "../styled-components/styledNavbar";
 
 const NavBar = () => {
   const [clicked, setClicked] = useState(false);
-  const navigate = useNavigate();
+  const { changeRoute } = useContext(NavigateContext);
 
   const handleClick = () => {
     setClicked(!clicked);
-  };
-
-  const changeRoute = (route) => {
-    navigate(route);
   };
 
   return (

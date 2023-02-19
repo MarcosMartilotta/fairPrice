@@ -1,12 +1,10 @@
+import { useContext } from "react";
+import NavigateContext from "../context/navigateContext";
 import { StyledAmbientsPage } from "../styled-components/styledAmbientsPage";
-import { useNavigate } from "react-router-dom";
 
 const AmbientsPage = () => {
-  const navigate = useNavigate();
+  const { changeRoute } = useContext(NavigateContext);
 
-  const changeRoute = (route) => {
-    navigate(route);
-  };
   return (
     <StyledAmbientsPage>
       <div className="hero">

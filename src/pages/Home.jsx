@@ -1,12 +1,9 @@
+import { useContext } from "react";
 import { StyledHome } from "../styled-components/syledHome";
-import { useNavigate } from "react-router-dom";
+import NavigateContext from "../context/navigateContext";
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const changeRoute = (route) => {
-    navigate(route);
-  };
+  const { changeRoute } = useContext(NavigateContext);
 
   return (
     <StyledHome>

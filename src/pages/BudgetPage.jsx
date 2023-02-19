@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import NavigateContext from "../context/navigateContext";
 import { StyledBudgetPage } from "../styled-components/styledBudgetPage";
 
 const BudgetPage = () => {
   const [budget, setBudget] = useState("");
   const [error, setError] = useState(false);
-  const navigate = useNavigate();
+  const { changeRoute } = useContext(NavigateContext);
 
   const handleChange = (newValue) => {
     setBudget(newValue);
@@ -14,7 +14,7 @@ const BudgetPage = () => {
   const sendRequest = () => {
     if (budget > 0) {
       setError(false);
-      navigate("/questionnarie/results");
+      changeRoute("/questionnarie/results");
     } else {
       setError(true);
     }
