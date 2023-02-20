@@ -32,6 +32,10 @@ export const NavStyled = styled.nav`
     align-items: center;
     justify-content: space-evenly;
     li {
+      padding: 2rem 4rem 2rem 4rem;
+
+      height: 4rem;
+
       text-align: center;
     }
     li:hover {
