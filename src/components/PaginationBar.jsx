@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import NavigateContext from "../context/navigateContext";
 import { StyledPaginationBar } from "../styled-components/styledPaginationBar";
+import bottomWave from "../assets/bottomWave.svg";
 
 const PaginationBar = () => {
   const { route } = useContext(NavigateContext);
@@ -58,6 +59,9 @@ const PaginationBar = () => {
           <div className="circle"></div>
         </>
       )}
+      <div className="bottomWave">
+        <img src={bottomWave} alt="" />
+      </div>
     </StyledPaginationBar>
   );
 };

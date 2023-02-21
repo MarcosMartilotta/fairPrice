@@ -12,8 +12,8 @@ export const StyledHome = styled.section`
   .backgroundShape {
     position: absolute;
     top: -3rem;
-    z-index: -1;
-    width: 100%;
+    z-index: -2;
+    width: 150%;
     left: -112px;
   }
   h1 {
@@ -41,11 +41,5 @@ export const StyledHome = styled.section`
         border-color: ${theme.light.red};
       }
     }
-  }
-  .bottomWave {
-    position: absolute;
-    bottom: 4rem;
-    height: 6rem;
-    width: 100%;
   }
 `;

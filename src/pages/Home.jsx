@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { StyledHome } from "../styled-components/syledHome";
 import NavigateContext from "../context/navigateContext";
 import titleShape from "../assets/titleShape.svg";
-import bottomWave from "../assets/bottomWave.svg";
 
 const Home = () => {
   const { changeRoute } = useContext(NavigateContext);
@@ -26,9 +25,6 @@ const Home = () => {
           Alquileres convenientes
         </button>
       </section>
-      <div className="bottomWave">
-        <img src={bottomWave} alt="" />
-      </div>
     </StyledHome>
   );
 };

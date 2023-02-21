@@ -38,4 +38,10 @@ export const StyledPaginationBar = styled.div`
     transition: 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     opacity: 1;
   }
+  .bottomWave {
+    position: absolute;
+    z-index: -1;
+    bottom: -3rem;
+    width: 100%;
+  }
 `;
