@@ -4,7 +4,7 @@ import { theme } from "../theming.js";
 export const StyledHome = styled.section`
   .hero {
     position: relative;
-    z-index: -1;
+    z-index: -3;
     padding: 1rem 2rem;
     padding-top: 5rem;
     height: 40vh;
@@ -15,8 +15,8 @@ export const StyledHome = styled.section`
     position: absolute;
     top: -7rem;
     z-index: -2;
-    width: 145%;
-    left: -112px;
+    width: 140%;
+    left: -161px;
   }
   h1 {
     width: 3rem;
