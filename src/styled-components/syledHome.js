@@ -3,6 +3,8 @@ import { theme } from "../theming.js";
 
 export const StyledHome = styled.section`
   .hero {
+    position: relative;
+    z-index: -1;
     padding: 1rem 2rem;
     padding-top: 5rem;
     height: 40vh;
@@ -11,9 +13,9 @@ export const StyledHome = styled.section`
   }
   .backgroundShape {
     position: absolute;
-    top: -3rem;
+    top: -7rem;
     z-index: -2;
-    width: 150%;
+    width: 145%;
     left: -112px;
   }
   h1 {
