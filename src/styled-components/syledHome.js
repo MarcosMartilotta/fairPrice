@@ -1,20 +1,27 @@
 import styled from "styled-components";
+import { theme } from "../theming.js";
 
 export const StyledHome = styled.section`
   .hero {
-    padding: 1rem;
+    padding: 1rem 2rem;
     padding-top: 5rem;
     height: 40vh;
     display: grid;
     align-content: bottom;
-    background-color: aquamarine;
+  }
+  .backgroundShape {
+    position: absolute;
+    top: -3rem;
+    z-index: -1;
+    width: 100%;
+    left: -112px;
   }
   h1 {
     width: 3rem;
     text-align: left;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 0.2rem;
-    line-height: 5rem;
+    line-height: 7rem;
   }
   .questions {
     padding-top: 10rem;
@@ -29,6 +36,16 @@ export const StyledHome = styled.section`
       border-radius: 1rem;
       font-size: 2rem;
       cursor: pointer;
+
+      &:hover {
+        border-color: ${theme.light.red};
+      }
     }
+  }
+  .bottomWave {
+    position: absolute;
+    bottom: 4rem;
+    height: 6rem;
+    width: 100%;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theming.js";
 
 export const StyledHamburguer = styled.div`
   display: inline-block;
@@ -15,7 +16,7 @@ export const StyledHamburguer = styled.div`
   }
 
   .nav-icon span {
-    background-color: #000;
+    background-color: ${theme.light.red};
     position: absolute;
     border-radius: 2px;
     transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);

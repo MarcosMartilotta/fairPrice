@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theming.js";
 
 export const StyledPaginationBar = styled.div`
   position: absolute;
@@ -12,14 +13,14 @@ export const StyledPaginationBar = styled.div`
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: blue;
+    background-color: ${theme.light.red};
     margin: -0.02rem;
   }
 
   .union {
     width: 6rem;
     height: 0.5rem;
-    background-color: blue;
+    background-color: ${theme.light.red};
     opacity: 0.5;
   }
 

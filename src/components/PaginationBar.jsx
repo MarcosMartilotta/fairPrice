@@ -8,42 +8,54 @@ const PaginationBar = () => {
   return (
     <StyledPaginationBar>
       <div className="circle"></div>
-
       {route === "/questionnarie/ambients" ||
       route === "/questionnarie/type" ||
-      route === "/questionnarie/budget" ? (
+      route === "/questionnarie/budget" ||
+      route === "/" ? (
         <>
-          <div className="union one pinted-line"></div>
-          <div className="circle one pinted-ball"></div>
-        </>
-      ) : (
-        <>
-          <div className="union one"></div>
-          <div className="circle one"></div>
-        </>
-      )}
+          {route === "/questionnarie/ambients" ||
+          route === "/questionnarie/type" ||
+          route === "/questionnarie/budget" ? (
+            <>
+              <div className="union one pinted-line"></div>
+              <div className="circle one pinted-ball"></div>
+            </>
+          ) : (
+            <>
+              <div className="union one"></div>
+              <div className="circle one"></div>
+            </>
+          )}
 
-      {route === "/questionnarie/type" || route === "/questionnarie/budget" ? (
-        <>
-          <div className="union two pinted-line"></div>
-          <div className="circle two pinted-ball"></div>
-        </>
-      ) : (
-        <>
-          <div className="union two"></div>
-          <div className="circle two"></div>
-        </>
-      )}
+          {route === "/questionnarie/type" ||
+          route === "/questionnarie/budget" ? (
+            <>
+              <div className="union two pinted-line"></div>
+              <div className="circle two pinted-ball"></div>
+            </>
+          ) : (
+            <>
+              <div className="union two"></div>
+              <div className="circle two"></div>
+            </>
+          )}
 
-      {route === "/questionnarie/budget" ? (
-        <>
-          <div className="union three pinted-line"></div>
-          <div className="circle three pinted-ball"></div>
+          {route === "/questionnarie/budget" ? (
+            <>
+              <div className="union three pinted-line"></div>
+              <div className="circle three pinted-ball"></div>
+            </>
+          ) : (
+            <>
+              <div className="union three"></div>
+              <div className="circle three"></div>
+            </>
+          )}
         </>
       ) : (
         <>
-          <div className="union three"></div>
-          <div className="circle three"></div>
+          <div className="union pinted-line"></div>
+          <div className="circle"></div>
         </>
       )}
     </StyledPaginationBar>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../theming.js";
 
 export const NavStyled = styled.nav`
   position: fixed;
@@ -52,7 +53,7 @@ export const NavStyled = styled.nav`
     width: 100%;
     height: 90vh;
     transition: all 0.3s ease-in-out;
-    background-color: blue;
+    background-color: ${theme.light.blue};
     opacity: 0.95;
     z-index: -5;
     &.active {
