@@ -26,7 +26,7 @@ export const StyledHome = styled.section`
     line-height: 7rem;
   }
   .questions {
-    padding-top: 10rem;
+    padding-top: 14rem;
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr;
