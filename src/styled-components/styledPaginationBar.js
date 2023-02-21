@@ -41,7 +41,7 @@ export const StyledPaginationBar = styled.div`
   .bottomWave {
     position: absolute;
     z-index: -1;
-    bottom: -3rem;
+    bottom: -4rem;
     width: 100%;
   }
 `;
