@@ -13,7 +13,7 @@ export const StyledHome = styled.section`
   }
   .backgroundShape {
     position: absolute;
-    top: -7rem;
+    top: -5rem;
     z-index: -2;
     width: 140%;
     left: -161px;
