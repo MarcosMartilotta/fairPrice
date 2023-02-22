@@ -1,11 +1,8 @@
-import { useContext } from "react";
 import { StyledHome } from "../styled-components/syledHome";
-import NavigateContext from "../context/navigateContext";
 import titleShape from "../assets/titleShape.svg";
+import Button from "../components/Button";
 
 const Home = () => {
-  const { changeRoute } = useContext(NavigateContext);
-
   return (
     <StyledHome>
       <section className="hero">
@@ -15,15 +12,11 @@ const Home = () => {
         </div>
       </section>
       <section className="questions">
-        <button type="button" onClick={() => changeRoute("/statistics")}>
-          Gráficos estadísticos
-        </button>
-        <button
-          type="button"
-          onClick={() => changeRoute("/questionnarie/ambients")}
-        >
-          Alquileres convenientes
-        </button>
+        <Button value="Gráficos estadísticos" route="/statistics"></Button>
+        <Button
+          value="Alquileres convenientes"
+          route="/questionnarie/ambients"
+        ></Button>
       </section>
     </StyledHome>
   );

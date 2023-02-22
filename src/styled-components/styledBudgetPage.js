@@ -35,16 +35,11 @@ export const StyledBudgetPage = styled.section`
     }
     p {
       font-size: 1.5rem;
+      margin-bottom: 4rem;
 
       &.error {
         color: tomato;
       }
     }
-  }
-
-  button {
-    width: 70%;
-    height: 8rem;
-    font-size: 2rem;
   }
 `;

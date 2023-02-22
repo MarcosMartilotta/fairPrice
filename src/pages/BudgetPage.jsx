@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
-import NavigateContext from "../context/navigateContext";
 import { StyledBudgetPage } from "../styled-components/styledBudgetPage";
+import NavigateContext from "../context/navigateContext";
+import { StyledButton } from "../styled-components/styledButton";
 
 const BudgetPage = () => {
   const [budget, setBudget] = useState("");
@@ -36,10 +37,10 @@ const BudgetPage = () => {
         ) : (
           <p>Ingrese el monto que desea pagar mensualmente</p>
         )}
+        <StyledButton onClick={() => sendRequest()}>
+          Muéstrame las propiedades que más me convienen
+        </StyledButton>
       </div>
-      <button type="button" onClick={() => sendRequest()}>
-        Muéstrame las propiedades que más me convienen
-      </button>
     </StyledBudgetPage>
   );
 };

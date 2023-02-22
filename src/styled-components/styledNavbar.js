@@ -7,6 +7,7 @@ export const NavStyled = styled.nav`
   width: 100%;
   height: 6rem;
   font-size: 2rem;
+  z-index: 2;
 
   .hamburguer {
     display: inline;

@@ -1,30 +1,17 @@
-import { useContext } from "react";
-import NavigateContext from "../context/navigateContext";
+import Button from "../components/Button";
 import { StyledAmbientsPage } from "../styled-components/styledAmbientsPage";
 
 const AmbientsPage = () => {
-  const { changeRoute } = useContext(NavigateContext);
-
   return (
     <StyledAmbientsPage>
       <div className="hero">
         <h2>¿Cuántos ambientes desea?</h2>
       </div>
-      <button onClick={() => changeRoute("/questionnarie/type")}>
-        Un ambiente
-      </button>
-      <button onClick={() => changeRoute("/questionnarie/type")}>
-        Dos ambientes
-      </button>
-      <button onClick={() => changeRoute("/questionnarie/type")}>
-        Tres ambientes
-      </button>
-      <button onClick={() => changeRoute("/questionnarie/type")}>
-        Cuatro ambientes
-      </button>
-      <button onClick={() => changeRoute("/questionnarie/type")}>
-        Cinco ambientes
-      </button>
+      <Button value="Un ambiente" route="/questionnarie/type"></Button>
+      <Button value="Dos ambientes" route="/questionnarie/type"></Button>
+      <Button value="Tres ambientes" route="/questionnarie/type"></Button>
+      <Button value="Cuatro ambientes" route="/questionnarie/type"></Button>
+      <Button value="Cinco ambientes" route="/questionnarie/type"></Button>
     </StyledAmbientsPage>
   );
 };

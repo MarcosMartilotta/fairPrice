@@ -21,12 +21,4 @@ export const StyledAmbientsTypePage = styled.section`
     letter-spacing: 0.2rem;
     line-height: 5rem;
   }
-
-  button {
-    height: 4rem;
-    width: 70%;
-    border-radius: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-  }
 `;

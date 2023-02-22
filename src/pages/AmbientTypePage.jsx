@@ -1,19 +1,15 @@
-import { useContext } from "react";
-import NavigateContext from "../context/navigateContext";
 import { StyledAmbientsTypePage } from "../styled-components/styledAmbientsTypePage";
+import Button from "../components/Button";
 
 const AmbientTypePage = () => {
-  const { changeRoute } = useContext(NavigateContext);
   return (
     <StyledAmbientsTypePage>
       <div className="hero">
         <h2>¿Que tipo de propiedad busca?</h2>
       </div>
-      <button onClick={() => changeRoute("/questionnarie/budget")}>PH</button>
-      <button onClick={() => changeRoute("/questionnarie/budget")}>
-        Departamento
-      </button>
-      <button onClick={() => changeRoute("/questionnarie/budget")}>Casa</button>
+      <Button value="PH" route="/questionnarie/budget"></Button>
+      <Button value="Departamento" route="/questionnarie/budget"></Button>
+      <Button value="Casa" route="/questionnarie/budget"></Button>
     </StyledAmbientsTypePage>
   );
 };

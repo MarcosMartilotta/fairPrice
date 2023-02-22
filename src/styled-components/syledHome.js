@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../theming.js";
 
 export const StyledHome = styled.section`
   .hero {
@@ -32,16 +31,5 @@ export const StyledHome = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    button {
-      height: 4rem;
-      width: 70%;
-      border-radius: 1rem;
-      font-size: 2rem;
-      cursor: pointer;
-
-      &:hover {
-        border-color: ${theme.light.red};
-      }
-    }
   }
 `;
