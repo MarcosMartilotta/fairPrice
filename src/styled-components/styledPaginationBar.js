@@ -26,7 +26,8 @@ export const StyledPaginationBar = styled.div`
 
   .one,
   .two,
-  .three {
+  .three,
+  .four {
     opacity: 0.5;
   }
 

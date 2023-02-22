@@ -12,11 +12,13 @@ const PaginationBar = () => {
       {route === "/questionnarie/ambients" ||
       route === "/questionnarie/type" ||
       route === "/questionnarie/budget" ||
+      route === "/questionnarie/results" ||
       route === "/" ? (
         <>
           {route === "/questionnarie/ambients" ||
           route === "/questionnarie/type" ||
-          route === "/questionnarie/budget" ? (
+          route === "/questionnarie/budget" ||
+          route === "/questionnarie/results" ? (
             <>
               <div className="union one pinted-line"></div>
               <div className="circle one pinted-ball"></div>
@@ -29,7 +31,8 @@ const PaginationBar = () => {
           )}
 
           {route === "/questionnarie/type" ||
-          route === "/questionnarie/budget" ? (
+          route === "/questionnarie/budget" ||
+          route === "/questionnarie/results" ? (
             <>
               <div className="union two pinted-line"></div>
               <div className="circle two pinted-ball"></div>
@@ -41,7 +44,8 @@ const PaginationBar = () => {
             </>
           )}
 
-          {route === "/questionnarie/budget" ? (
+          {route === "/questionnarie/budget" ||
+          route === "/questionnarie/results" ? (
             <>
               <div className="union three pinted-line"></div>
               <div className="circle three pinted-ball"></div>
@@ -50,6 +54,18 @@ const PaginationBar = () => {
             <>
               <div className="union three"></div>
               <div className="circle three"></div>
+            </>
+          )}
+
+          {route === "/questionnarie/results" ? (
+            <>
+              <div className="union four pinted-line"></div>
+              <div className="circle four pinted-ball"></div>
+            </>
+          ) : (
+            <>
+              <div className="union four"></div>
+              <div className="circle four"></div>
             </>
           )}
         </>
