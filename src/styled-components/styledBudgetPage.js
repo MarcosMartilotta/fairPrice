@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBudgetPage = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-rows: 2fr repeat(3, 1fr);
   align-items: center;

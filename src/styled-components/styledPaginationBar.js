@@ -3,11 +3,15 @@ import { theme } from "../theming.js";
 
 export const StyledPaginationBar = styled.div`
   position: absolute;
-  bottom: 5rem;
+  bottom: 10rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    bottom: 20rem;
+  }
 
   .circle {
     width: 1.5rem;
