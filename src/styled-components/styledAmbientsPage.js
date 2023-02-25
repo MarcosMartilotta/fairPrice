@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledAmbientsPage = styled.section`
   display: grid;
   grid-template-rows: 2fr 1fr;
-  height: 90vh;
+  height: 80vh;
   align-items: center;
   justify-items: center;
 
@@ -11,6 +11,7 @@ export const StyledAmbientsPage = styled.section`
     grid-template-rows: 2fr 1fr 1fr;
   }
   .hero {
+    margin-top: 4rem;
     width: 100%;
     padding: 0 1rem;
   }
