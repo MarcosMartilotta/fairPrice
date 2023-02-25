@@ -19,6 +19,12 @@ body {
   overflow-x: hidden;
   background-color: #df4e4e17;
 }
+@media(max-width: 768px){
+  body{
+
+    overflow-y: hidden;
+  }
+}
 
 
 #root{

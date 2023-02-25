@@ -7,9 +7,11 @@ const AmbientTypePage = () => {
       <div className="hero">
         <h2>¿Que tipo de propiedad busca?</h2>
       </div>
-      <Button value="PH" route="/questionnarie/budget"></Button>
-      <Button value="Departamento" route="/questionnarie/budget"></Button>
-      <Button value="Casa" route="/questionnarie/budget"></Button>
+      <div div className="questions">
+        <Button value="PH" route="/questionnarie/budget"></Button>
+        <Button value="Departamento" route="/questionnarie/budget"></Button>
+        <Button value="Casa" route="/questionnarie/budget"></Button>
+      </div>
     </StyledAmbientsTypePage>
   );
 };

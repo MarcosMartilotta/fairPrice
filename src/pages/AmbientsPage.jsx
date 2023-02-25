@@ -7,11 +7,13 @@ const AmbientsPage = () => {
       <div className="hero">
         <h2>¿Cuántos ambientes desea?</h2>
       </div>
-      <Button value="Un ambiente" route="/questionnarie/type"></Button>
-      <Button value="Dos ambientes" route="/questionnarie/type"></Button>
-      <Button value="Tres ambientes" route="/questionnarie/type"></Button>
-      <Button value="Cuatro ambientes" route="/questionnarie/type"></Button>
-      <Button value="Cinco ambientes" route="/questionnarie/type"></Button>
+      <div className="questions">
+        <Button value="Un ambiente" route="/questionnarie/type"></Button>
+        <Button value="Dos ambientes" route="/questionnarie/type"></Button>
+        <Button value="Tres ambientes" route="/questionnarie/type"></Button>
+        <Button value="Cuatro ambientes" route="/questionnarie/type"></Button>
+        <Button value="Cinco ambientes" route="/questionnarie/type"></Button>
+      </div>
     </StyledAmbientsPage>
   );
 };

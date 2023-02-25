@@ -14,7 +14,6 @@ const ResultsPage = () => {
       <PropertyCard></PropertyCard>
       <PropertyCard></PropertyCard>
       <PropertyCard></PropertyCard>
-      <PropertyCard></PropertyCard>
     </StyledResultsPage>
   );
 };

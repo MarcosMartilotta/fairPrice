@@ -26,18 +26,23 @@ const BudgetPage = () => {
         <h2>¿Cual es su presupuesto?</h2>
       </div>
       <div className="input-section">
-        <input
-          type="number"
-          placeholder="Ej: $90000"
-          value={budget}
-          onChange={(event) => handleChange(event.target.value)}
-        />
+        <div className="input-field">
+          <span className="currency">$</span>
+          <input
+            type="text"
+            name="text"
+            pattern="^[0-9,$]*$"
+            placeholder="90000"
+            value={budget}
+            onChange={(event) => handleChange(event.target.value)}
+          />
+        </div>
         {error ? (
           <p className="error">Ingrese un monto válido</p>
         ) : (
           <p>Ingrese el monto que desea pagar mensualmente</p>
         )}
-        <StyledButton onClick={() => sendRequest()}>
+        <StyledButton className="button" onClick={() => sendRequest()}>
           Muéstrame las propiedades que más me convienen
         </StyledButton>
       </div>

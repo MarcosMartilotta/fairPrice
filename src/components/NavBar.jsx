@@ -10,18 +10,50 @@ const NavBar = () => {
   const handleClick = () => {
     setClicked(!clicked);
   };
-
   return (
-    <NavStyled onClick={handleClick}>
+    <NavStyled /* onClick={handleClick} */>
       <div className={`links-container ${!clicked ? "" : "active"}`}>
         <ul className={!clicked ? "" : "active"}>
-          <li onClick={() => changeRoute("/")}>Inicio</li>
-          <li onClick={() => changeRoute("/statistics")}>Estadísticas</li>
-          <li onClick={() => changeRoute("/questionnarie/results")}>
+          <li
+            onClick={() => {
+              setClicked(!clicked);
+              changeRoute("/");
+            }}
+          >
+            Inicio
+          </li>
+          <li
+            onClick={() => {
+              setClicked(!clicked);
+              changeRoute("/statistics");
+            }}
+          >
+            Estadísticas
+          </li>
+          <li
+            onClick={() => {
+              setClicked(!clicked);
+              changeRoute("/questionnarie/results");
+            }}
+          >
             Alquileres convenientes
           </li>
-          <li onClick={() => changeRoute("/tuttorials")}>Tutoriales</li>
-          <li onClick={() => changeRoute("/ourmission")}>Nuestra misión</li>
+          <li
+            onClick={() => {
+              setClicked(!clicked);
+              changeRoute("/tuttorials");
+            }}
+          >
+            Tutoriales
+          </li>
+          <li
+            onClick={() => {
+              setClicked(!clicked);
+              changeRoute("/ourmission");
+            }}
+          >
+            Nuestra misión
+          </li>
         </ul>
       </div>
       <Hamburguer

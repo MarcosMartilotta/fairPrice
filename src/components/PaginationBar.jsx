@@ -75,9 +75,9 @@ const PaginationBar = () => {
           <div className="circle"></div>
         </>
       )}
-      <div className="bottomWave">
+      {/*   <div className="bottomWave">
         <img src={bottomWave} alt="" />
-      </div>
+      </div> */}
     </StyledPaginationBar>
   );
 };

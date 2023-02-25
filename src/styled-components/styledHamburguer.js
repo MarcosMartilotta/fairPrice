@@ -52,4 +52,8 @@ export const StyledHamburguer = styled.div`
     transform: rotate(-45deg);
     top: 13px;
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;

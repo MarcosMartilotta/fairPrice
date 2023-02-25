@@ -6,14 +6,23 @@ const Home = () => {
   return (
     <StyledHome>
       <section className="hero">
-        <h1>El valor justo</h1>
-        <div className="backgroundShape">
+        <h1>EL VALOR JUSTO</h1>
+        <p>
+          ¿Querés saber si tu alquiler es caro? ¿Si la casa que viste vale
+          realmente lo que te dicen? ¡Estás en el sitio correcto!
+        </p>
+        {/*      <div className="backgroundShape">
           <img src={titleShape} alt="" />
-        </div>
+        </div> */}
       </section>
       <section className="questions">
-        <Button value="Gráficos estadísticos" route="/statistics"></Button>
         <Button
+          className="graficsButton"
+          value="Gráficos estadísticos"
+          route="/statistics"
+        ></Button>
+        <Button
+          className="alquileresButton"
           value="Alquileres convenientes"
           route="/questionnarie/ambients"
         ></Button>
