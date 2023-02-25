@@ -11,7 +11,7 @@ export const StyledBudgetPage = styled.section`
   .hero {
     width: 100%;
     padding: 1rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
     height: 30vh;
     display: grid;
     align-content: bottom;

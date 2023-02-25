@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAmbientsPage = styled.section`
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   height: 90vh;
   align-items: center;
   justify-items: center;
@@ -12,9 +12,7 @@ export const StyledAmbientsPage = styled.section`
   }
   .hero {
     width: 100%;
-    padding: 1rem;
-    display: grid;
-    align-content: bottom;
+    padding: 0 1rem;
   }
 
   .questions {
@@ -23,6 +21,7 @@ export const StyledAmbientsPage = styled.section`
     gap: 2rem;
     padding-bottom: 2rem;
     @media (min-width: 768px) {
+      margin-top: 4rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
       button:nth-child(5) {

@@ -3,7 +3,7 @@ import { theme } from "../theming.js";
 
 export const StyledPaginationBar = styled.div`
   position: absolute;
-  bottom: 2rem;
+  bottom: 5rem;
   width: 100%;
   display: flex;
   align-items: center;

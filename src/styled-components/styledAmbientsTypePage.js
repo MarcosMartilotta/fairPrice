@@ -6,13 +6,11 @@ export const StyledAmbientsTypePage = styled.section`
   height: 90vh;
   align-items: center;
   justify-items: center;
+
   .hero {
     width: 100%;
     padding: 1rem;
-    padding-top: 5rem;
-    height: 30vh;
-    display: grid;
-    align-content: bottom;
+    padding-top: 6rem;
   }
   .questions {
     margin-top: 6rem;
@@ -20,8 +18,9 @@ export const StyledAmbientsTypePage = styled.section`
     grid-template-rows: repeat(3, 1fr);
     gap: 4rem;
     @media (min-width: 768px) {
-      margin-top: 12;
-      grid-template-columns: 1fr;
+      margin-top: 8rem;
+      align-items: center;
+      grid-template-rows: 1fr;
       grid-template-columns: repeat(3, 1fr);
     }
   }

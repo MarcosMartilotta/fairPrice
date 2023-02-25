@@ -60,11 +60,10 @@ export const StyledHome = styled.section`
     justify-items: center;
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-      gap: 0;
-      .graficsButton {
-      }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 `;
