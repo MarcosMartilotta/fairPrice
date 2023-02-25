@@ -9,10 +9,6 @@ export const StyledPaginationBar = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
-    bottom: 12rem;
-  }
-
   .circle {
     width: 1.5rem;
     height: 1.5rem;
