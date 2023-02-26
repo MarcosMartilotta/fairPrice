@@ -1,6 +1,6 @@
 export const theme = {
   light: {
-    blue: " #C6E4EF",
+    blue: " #6F6597",
     red: "#DF4F4E",
     redWidthOpacity: "#df4e4e17",
   },
