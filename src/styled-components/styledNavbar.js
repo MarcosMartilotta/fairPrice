@@ -7,8 +7,8 @@ export const NavStyled = styled.nav`
   width: 100%;
   font-size: 2rem;
   z-index: 2;
-  color: white;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34);
+  /* color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34); */
   .hamburguer {
     right: 0;
   }

@@ -8,8 +8,8 @@ export const StyledHome = styled.section`
     height: 40vh;
     display: grid;
     align-content: bottom;
-    color: white;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34);
+    /* color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34); */
 
     p {
       display: none;
