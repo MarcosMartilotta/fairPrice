@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const StyledAmbientsPage = styled.section`
   display: grid;
-  grid-template-rows: 2fr 1fr;
-  height: 80vh;
+  grid-template-rows: 1fr 1fr;
+  height: 70vh;
   align-items: center;
   justify-items: center;
 
   @media (min-width: 768px) {
+    height: 90vh;
     grid-template-rows: 2fr 1fr 1fr;
   }
   .hero {
