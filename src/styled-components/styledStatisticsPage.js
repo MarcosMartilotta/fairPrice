@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 export const StyledStatisticsPage = styled.section`
-  margin: 12rem;
+  margin: 8rem 4rem;
+  .iframe-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+  }
   iframe {
-    margin-bottom: 4rem;
+    width: 70%;
+    height: 90vh;
   }
 `;

@@ -36,7 +36,7 @@ const NavBar = () => {
               changeRoute("/questionnarie/results");
             }}
           >
-            Alquileres convenientes
+            Alquileres favoritos
           </li>
           <li
             onClick={() => {
