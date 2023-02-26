@@ -6,7 +6,7 @@ export const StyledResultsPage = styled.section`
   display: flex;
   justify-content: right;
   .cardsContainer {
-    width: 90%;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
