@@ -1,6 +1,6 @@
 import { StyledHome } from "../styled-components/syledHome";
 import Button from "../components/Button";
-// import background from "../assets/backGround.jpg";
+import background from "../assets/backGround.jpg";
 
 const Home = () => {
   return (
