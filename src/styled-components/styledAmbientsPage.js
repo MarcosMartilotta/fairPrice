@@ -11,7 +11,6 @@ export const StyledAmbientsPage = styled.section`
     grid-template-rows: 2fr 1fr 1fr;
   }
   .hero {
-    margin-top: 4rem;
     width: 100%;
     padding: 0 1rem;
   }
